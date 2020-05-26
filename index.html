@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo Editor</title>
+    <style>
+      #upload {
+        text-align: center;
+        background-color: rgb(130, 248, 175);
+        border-radius: 10px;
+      }
+      input {
+        margin: 2em 0;
+      }
+      #buttons {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2em 0;
+        border: 1px solid rgb(130, 248, 175);
+        border-radius: 10px;
+        padding: 10px;
+      }
+      button {
+        background-color: rgb(171, 198, 247);
+        border-radius: 10px;
+        width: 10em;
+        padding: 10px;
+      }
+      canvas {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="upload">
+      <label for="uploader">Select File:</label>
+      <input type="file" id="uploader" />
+    </div>
+    <div id="buttons">
+      <button>Greyscale</button>
+      <button>Sepia effect</button>
+      <button>Invert</button>
+      <button>RGB > RBG</button>
+      <button>RGB>BGR</button>
+      <button>RGB>GBR</button>
+      <button>RGB>GRB</button>
+      <button>Clear</button>
+    </div>
+    <div >
+      <canvas id="canvas" ></canvas>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
