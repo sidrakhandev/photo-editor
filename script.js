@@ -120,3 +120,11 @@ document.querySelectorAll("button")[4].addEventListener("click", bgr);
 document.querySelectorAll("button")[5].addEventListener("click", gbr);
 document.querySelectorAll("button")[6].addEventListener("click", grb);
 document.querySelectorAll("button")[7].addEventListener("click", clearChanges);
+
+function download() {
+  var download = document.getElementById("download");
+  var image = document.getElementById("canvas").toDataURL("image/png")
+      .replace("image/png", "image/octet-stream");
+  download.setAttribute("href", image);
+  //download.setAttribute("download","archive.png");
+  }

@@ -30,6 +30,7 @@
       canvas {
         max-width: 100%;
       }
+
     </style>
   </head>
   <body>
@@ -47,9 +48,14 @@
       <button>RGB>GRB</button>
       <button>Clear</button>
     </div>
+
+    <a id="download" download="triangle.png">
+     <button type="button" onClick="download()">Download</button>
+     </a>
     <div >
-      <canvas id="canvas" ></canvas>
-    </div>
+      <canvas id="canvas" width="720" height="450"></canvas>
+   </div>
+        
     <script src="script.js"></script>
   </body>
 </html>
